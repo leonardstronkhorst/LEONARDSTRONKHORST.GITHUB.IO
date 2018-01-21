@@ -1,0 +1,22 @@
+{
+    "short_name": "Planning Poker",
+    "name": "Nipo Collaboration Suite",
+    "icons": [
+      {
+        "src": "nipo-logo48.png",
+        "type": "image/png",
+        "sizes": "48x48"
+      },
+      {
+        "src": "nipo-logo96.png",
+        "type": "image/png",
+        "sizes": "96x96"
+      },
+      {
+        "src": "nipo-logo192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ],
+    "start_url": "index.html?launcher=true"
+  }
