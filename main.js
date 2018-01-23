@@ -42,8 +42,8 @@ window.onload = function() {
 	// The rest of the code in this tutorial will go here...
 	
 	// Create a new WebSocket.
-	var socket = new WebSocket('ws://leonardstronkhorst.github.io');
-
+	var socket2 = new WebSocket('ws://echo.websocket.org');
+	var socket = new WebSocket('wss://leonardstronkhorst.github.io');
 
 	// Show a connected message when the WebSocket is opened.
 	socket.onopen = function(event) {
