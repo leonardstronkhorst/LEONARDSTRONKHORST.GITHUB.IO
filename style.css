@@ -45,10 +45,15 @@ body, html {
   height: 100%;
   width: 100%;
 }
+.one-card .card.back p {
+  color: #be311a;
+}
+.one-card .card.front p {
+  color: #ffffff;
+}
 .one-card .card p {
   height: 100%;
   background-color: #be311a;
-  color: #be311a;
   margin: 0;
   padding: 0;  
   display: block;

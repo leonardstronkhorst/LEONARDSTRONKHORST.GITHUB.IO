@@ -12,19 +12,25 @@ if ('serviceWorker' in navigator) {
 
 $(document).ready(function() {
 	
-	$('.card').click(function(e) {
-		var text = e.target.innerText;
-		$(".one-card .card p").text(text)
+	$('.card-container .card').click(function(e) {
+		$(".one-card .card p").text(e.target.innerText)
+		$('.one-card .card').addClass('back').removeClass('front');
 
 		$('.card-container').hide();
 		$('.one-card').show();
-
-		$('.card').click(function() {
-			$('.one-card .card p').css('color', '#ffffff');			
-		});
-		$('#back').click(function() {
-			$('.card-container').show();
-			$('.one-card').hide();
-			});
 	});
+
+	$('#back').click(function() {
+		$('.card-container').show();
+		$('.one-card').hide();
+	});
+
+	$('.one-card .card').click(function() {
+		if ($('.one-card .card').hasClass('back')) {
+			$('.one-card .card').removeClass('back').addClass('front');
+		} else {
+			$('.one-card .card').addClass('back').removeClass('front');
+		}
+	});
+
 });
