@@ -5,7 +5,8 @@ var urlsToCache = [
   '/nipo-logo48.png',
   '/nipo-logo96.png',
   '/nipo-logo192.png',
-  '/main.js'
+  '/main.js',
+  '/style.css'
 ];
 
 self.addEventListener('install', function(event) {
