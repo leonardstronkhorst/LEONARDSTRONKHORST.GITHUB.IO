@@ -12,7 +12,7 @@ window.onload = function() {
 	// Create a new WebSocket.
 	//var url = 'wss://leonardstronkhorst.github.io';
 	//var socket = new WebSocket(url);
-	var socket = new WebSocket('ws://echo.websocket.org');
+	var socket = new WebSocket('wss://echo.websocket.org');
 
 	// Show a connected message when the WebSocket is opened.
 	socket.onopen = function(event) {
