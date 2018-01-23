@@ -8,4 +8,16 @@ if ('serviceWorker' in navigator) {
 		console.log('ServiceWorker registration failed: ', err);
 	  });
 	});
-  }
+	}
+
+$(document).ready(function() {
+	
+	$('.card').click(function() {
+		$('.card-container').hide();
+		$('.one-card').show();
+
+		$('.card').click(function() {
+			$('.one-card .card p').css('color', '#ffffff');			
+		});
+	});
+});

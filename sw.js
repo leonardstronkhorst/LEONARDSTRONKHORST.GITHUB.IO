@@ -1,6 +1,7 @@
 var CACHE_NAME = 'poker-cache-v1';
 var urlsToCache = [
   '/',
+  '/index.html',
   '/nipo-logo48.png',
   '/nipo-logo96.png',
   '/nipo-logo192.png',
